@@ -40,5 +40,5 @@ if __name__ == "__main__":
                 pixel[2] = pixel[2] * alpha + 255 * (1 - alpha)
 
         image = cv2.cvtColor(image, cv2.COLOR_BGRA2BGR)
-        cv2.imwrite(item[:-4] + ".jpg", image)
-        print("Finished processing: " + item[:-4] + ".jpg")
+        cv2.imwrite(item[:-4] + ".png", image)
+        print("Finished processing: " + item[:-4] + ".png")
